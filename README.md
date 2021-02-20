@@ -9,9 +9,19 @@ The ION (interplanetary overlay network) software is a suite of communication pr
 On [Google Cloud Console](
 Google Cloud Consoleconsole.cloud.google.com), at the top left click on the hamburger icon. Scrow down until you find `Compute Engine`. Scrow over Compute Engine and then `VM Instances`.
 
- ![Alt text](/blob/img1.png) "Google Cloud Console"
+ ![Alt text](/blob/img1.png?raw=true "Google Cloud Console") 
 
+Click create a new instance, then add the configurations of the instance:
 
+*Name*: instance-dtn
+*Region*: Select the reagion closest to you
+*Machine Configuration*: Selec the configuration that will suit your needs. I have selected the default `E2 Series` and *Machine type* `e2-medium (2vCPU, 4 BG memory)`
+*Identity and API Access*: Select `Allow full access to all Cloud APIs`. We will be doing a tutorial on using Cloud Vision, so make sure you enable the APIs
+*Firewall*: Select Allow HTTP and HTTPS
+
+Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the Name of your instance, the Zone where it has been deployed, its Internal and External IPs.
+
+Once the VM is started you can SSH directly into the VM.
 
 ## Getting Started with  ION
 
