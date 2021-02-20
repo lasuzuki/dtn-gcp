@@ -6,12 +6,12 @@ The ION (interplanetary overlay network) software is a suite of communication pr
 
 ## Getting Started with Google Cloud VMs
 
-On [Google Cloud Console](console.cloud.google.com), at the top left, `click` on the hamburger icon. Scrow down until you find `Compute Engine`. Hove over Compute Engine and then `VM Instances`.
+On [Google Cloud Console](console.cloud.google.com), at the top left, `click` on the hamburger icon. Scrow down until you find `Compute Engine`. Hove over `Compute Engine` and then `click` on `VM Instances`.
 
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img1.png" width=400 align=center>
 
 
-Click `Create` a new instance, then add the configurations of the instance:
+Click `Create` a new instance. In the new page  add the configurations of the instance:
 
 **Name**: instance-dtn
 
@@ -23,9 +23,9 @@ Click `Create` a new instance, then add the configurations of the instance:
 
 **Firewall**: Select Allow HTTP and HTTPS
 
-Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the Name of your instance, the Zone where it has been deployed, its Internal and External IPs.
+Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the `Name` of your instance, the `Zone` where it has been deployed, its `Internal` and `External IPs`.
 
-Once the VM is started you can SSH directly into the VM.
+Once the VM is started you can `SSH` directly into the VM.
 
 ## Getting Started with  ION
 
@@ -57,7 +57,6 @@ Finally, install (requires root privileges):
 ```
 sudo make install
 ```
-Autotools will usually install packages such as this in the /usr/local/ directory tree. This is where the example configuration files and a copy of this tutorial will end up (that is, in the share/ion subdirectory).
 
 For Linux based systems, you may need to run `sudo ldconfig` with no arguments after install.
 
