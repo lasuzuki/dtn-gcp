@@ -44,13 +44,17 @@ To generate the SSH key pair to connect securely to the virtual machine, follow 
 6. It will display the public key in the terminal. 
 7. Highlight and copy this key
 
-Back in the Google Cloud Console, click `Compute Engine`, then on `VM Instances`. Click on the name of the VM instance you would like to SSH. In the new page, at the top toolbar, click `Edit`. 
+Back in the Google Cloud Console:
+1. Click `Compute Engine`
+2. Then on `VM Instances`
+3. Click on the name of the VM instance you would like to SSH into. 
+4. In the new page, at the top toolbar, click `Edit`. 
 
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img2.png" width=400 align=center>
 
-At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. On the text field, paste the SSH key and hit `Save`.
+At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. In the `Enter public key` text field, paste your SSH key and hit `Save`.
 
-Now you can just open your terminal on your Mac or Linux machine and type `ssh IP.IP.IP.IP` and you will be on the VM.
+Now you can just open your terminal on your Mac or Linux machine and type `ssh IP.IP.IP.IP` and you will be on the VM (IP.IP.IP.IP is the external IP of the VM).
 
 
 ## Getting Started with  ION
