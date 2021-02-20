@@ -2,13 +2,16 @@
 
 Given to bpadmin either as a file or from the daemon command line, this file configures the endpoints through which this node's Bundle Protocol Agent (BPA) will communicate. We will assume the local BPA's node number is 1; as for LTP, in ION node numbers are used to identify bundle protocol agents.
 
-````1````
+````
+1
+````
 
 This initializes the bundle protocol:
 
 `1` refers to this being the initialization or ''first'' command.
 
-````a scheme ipn 'ipnfw' 'ipnadminep'
+````
+a scheme ipn 'ipnfw' 'ipnadminep'
 ````
 
 This adds support for a new Endpoint Identifier (EID) scheme:
@@ -24,7 +27,8 @@ This adds support for a new Endpoint Identifier (EID) scheme:
 `'ipnadminep'` is the name of the IPN scheme's custody transfer management daemon.
 
 
-````a endpoint ipn:1.0 q
+````
+a endpoint ipn:1.0 q
 ````
 
 This command establishes this BP node's membership in a BP endpoint:
@@ -47,7 +51,8 @@ a endpoint ipn:1.2 q
 
 These specify two more endpoints that will be used for test traffic.
 
-````a protocol ltp 1400 100
+````
+a protocol ltp 1400 100
 ````
 
 This command adds support for a convergence-layer protocol:
@@ -63,7 +68,8 @@ This command adds support for a convergence-layer protocol:
 `100` is the estimated size of the protocol transmission overhead (in bytes) per convergence-layer procotol data unit sent.
 
 
-````a induct ltp 1 ltpcli
+````
+a induct ltp 1 ltpcli
 ````
 
 This command adds an induct, through which incoming bundles can be received from other nodes:
@@ -79,7 +85,8 @@ This command adds an induct, through which incoming bundles can be received from
 `ltpcli` is the name of the daemon used to implement the induct.
 
 
-````a outduct ltp 1 ltpclo
+````
+a outduct ltp 1 ltpclo
 ````
 
 This command adds an outduct, through which outgoing bundles can be sent to other nodes:
@@ -95,11 +102,14 @@ This command adds an outduct, through which outgoing bundles can be sent to othe
 `ltpclo` is the name of the daemon used to implement the outduct.
 
 
-````s````
+````
+s
+````
 
 This command starts the bundle engine including all daemons for the inducts and outducts.
 
 That means that the entire configuration file host1.bprc looks like this:
+
 ````
 1
 a scheme ipn 'ipnfw' 'ipnadminep'
