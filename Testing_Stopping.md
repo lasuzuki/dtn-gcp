@@ -40,6 +40,8 @@ bpsource ipn:1.1
 
 This will begin sending messages you type to the Endpoint ID ipn:1.1, which is currently being listened to by bpsink. Type messages into bpsource, press enter, and see if they are reported by bpsink.
 
+<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img4.png" width=400 align=center>
+
 
 # Stopping the Daemon
 
