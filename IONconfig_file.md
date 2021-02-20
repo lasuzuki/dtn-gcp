@@ -6,7 +6,9 @@ This file specifies contact times and one-way light times between nodes. This is
 
 The configuration file lines are as follows:
 
-`1 1 ''`
+````
+1 1 ''
+````
 
 This command will initialize the ion node to be node number 1.
 
@@ -17,7 +19,9 @@ This command will initialize the ion node to be node number 1.
 
 This will start the ION node. It mostly functions to officially "start" the node in a specific instant; it causes all of ION's protocol-independent background daemons to start running.
 
-`a contact +1 +3600 1 1 100000`
+````
+a contact +1 +3600 1 1 100000
+````
 
 specifies a transmission opportunity for a given time duration between two connected nodes (or, in this case, a loopback transmission opportunity).
 
@@ -29,7 +33,9 @@ specifies a transmission opportunity for a given time duration between two conne
 `1` is the destination node number.
 `100000` is the maximum rate at which data is expected to be transmitted from the source node to the destination node during this time period (here, it is 100000 bytes / second).
 
-`a range +1 +3600 1 1 1`
+````
+a range +1 +3600 1 1 1
+````
 
 specifies a distance between nodes, expressed as a number of light seconds, where each element has the following meaning:
 
@@ -41,7 +47,9 @@ specifies a distance between nodes, expressed as a number of light seconds, wher
 `1` is the other node.
 `1` is the distance between the nodes, measured in light seconds, also sometimes called the "one-way light time" (here, one light second is the expected distance).
 
-`m production 1000000` 
+````
+m production 1000000
+````
 
 specifies the maximum rate at which data will be produced by the node.
 
@@ -49,7 +57,9 @@ specifies the maximum rate at which data will be produced by the node.
 `production` declares that this command declares the maximum rate of data production at this ION node.
 `1000000` specifies that at most 1000000 bytes/second will be produced by this node.
 
-`m consumption 1000000`
+````
+m consumption 1000000
+````
 
 specifies the maximum rate at which data can be consumed by the node.
 
@@ -59,10 +69,11 @@ specifies the maximum rate at which data can be consumed by the node.
 
 This will make a final configuration file host1.ionrc which looks like this:
 
-```1 1 ''
+````
+1 1 ''
 s
 a contact +1 +3600 1 1 100000
 a range +1 +3600 1 1 1
 m production 1000000
-m consumption 1000000```
-
+m consumption 1000000
+````
