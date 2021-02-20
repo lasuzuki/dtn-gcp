@@ -1,5 +1,5 @@
 # DTN 101 - Configuring DTN on Google Cloud
-Copyrights Larissa Suzuki and Vint Cerf, Google Inc
+By Larissa Suzuki and Vint Cerf, Google Inc
 
 ## Introduction
 The ION (interplanetary overlay network) software is a suite of communication protocol implementations designed to support mission operation communications across an end-to-end interplanetary network, which might include on-board (flight) subnets, in-situ planetary or lunar networks, proximity links, deep space links, and terrestrial internets.
