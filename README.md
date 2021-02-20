@@ -4,10 +4,16 @@ By Larissa Suzuki and Vint Cerf, Google Inc
 ## Introduction
 The ION (interplanetary overlay network) software is a suite of communication protocol implementations designed to support mission operation communications across an end-to-end interplanetary network, which might include on-board (flight) subnets, in-situ planetary or lunar networks, proximity links, deep space links, and terrestrial internets.
 
-## Installing ION
+## Getting Started with Google Cloud VMs
+
+
+
+### Getting Started with  ION
+
 The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download)
 
-## Compiling ION using autotools
+### Compiling ION using autotools
+
 Follow the standard autoconf method for compiling the project. In the base ION directory run:
 
 ```
@@ -25,9 +31,8 @@ Autotools will usually install packages such as this in the /usr/local/ director
 
 For Linux based systems, you may need to run ldconfig with no arguments after install.
 
-## Quick Start Guide
-
 ### Programs in ION
+
 The following tools are a few examples of programs availale to you after ION is built:
 
 **1. Daemon and Configuration:**
