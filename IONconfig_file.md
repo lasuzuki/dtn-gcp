@@ -7,7 +7,7 @@ This file specifies contact times and one-way light times between nodes. This is
 The configuration file lines are as follows:
 
 ````
-1 1 ''
+**1 1 ''**
 ````
 
 This command will initialize the ion node to be node number 1.
