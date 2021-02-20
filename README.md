@@ -60,7 +60,7 @@ sudo make install
 ```
 Autotools will usually install packages such as this in the /usr/local/ directory tree. This is where the example configuration files and a copy of this tutorial will end up (that is, in the share/ion subdirectory).
 
-For Linux based systems, you may need to run ldconfig with no arguments after install.
+For Linux based systems, you may need to run `sudo ldconfig` with no arguments after install.
 
 ### Programs in ION
 
