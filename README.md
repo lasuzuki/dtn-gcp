@@ -73,7 +73,7 @@ A script has been created which allows a more streamlined configuration and star
 6. [Testing your connection]
 7. [Stopping the Daemon]
 
-## Testing and Stopping your Connection
+### Testing and Stopping your Connection
 1. [Testing your connection]
 2. [Stopping the Daemon]
 
