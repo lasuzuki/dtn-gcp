@@ -65,13 +65,15 @@ A script has been created which allows a more streamlined configuration and star
 - Manually typing configuration commands into the terminal for each administration program.
 
 ### The Configuration Files
-1. [The Ion Configuration File]
-2. [The Licklider Transfer Protocol Configuration File]
-3. [The Bundle Protocol Configuration File]
-4. [The IPN Routing Configuration File
-5. [The ION Security Configuration file]
-6. [Testing your connection]
-7. [Stopping the Daemon]
+Below we present the configuration files that you should be aware and configure for ION to execute correctly. An overview of the configuration files and their usage an be found [here](Configuration_Files.md)
+
+1. The Ion Configuration File
+2. The Licklider Transfer Protocol Configuration File
+3. The Bundle Protocol Configuration File
+4. The IPN Routing Configuration File
+5. The ION Security Configuration file
+6. Testing your connection
+7. Stopping the Daemon
 
 ### Testing and Stopping your Connection
 1. [Testing your connection]
