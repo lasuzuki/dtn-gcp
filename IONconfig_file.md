@@ -95,7 +95,7 @@ m consumption 1000000
 `1000000` specifies that at most 1000000 bytes/second will be consumed by this node.
 
 
-## Final configuration file - host1.ionrc
+## Final configuration file - `host1.ionrc`
 
 ````
 ## begin ionadmin
