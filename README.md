@@ -63,3 +63,17 @@ A script has been created which allows a more streamlined configuration and star
 
 - (Recommended) Creating a configuration file and passing it to ionadmin, bpadmin, ipnadmin, ltpadmin, etc. either directly or via the ionstart helper script.
 - Manually typing configuration commands into the terminal for each administration program.
+
+### The Configuration Files
+1. [The Ion Configuration File]
+2. [The Licklider Transfer Protocol Configuration File]
+3. [The Bundle Protocol Configuration File]
+4. [The IPN Routing Configuration File
+5. [The ION Security Configuration file]
+6. [Testing your connection]
+7. [Stopping the Daemon]
+
+## Testing and Stopping your Connection
+1. [Testing your connection]
+2. [Stopping the Daemon]
+
