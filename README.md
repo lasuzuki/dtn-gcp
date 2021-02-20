@@ -50,7 +50,7 @@ Back in the Google Cloud Console, click `Compute Engine`, then on `VM Instances`
 
 At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. On the text field, paste the SSH key and hit `Save`.
 
-Now you can just type `ssh IP.IP.IP.IP` and you will be on the VM.
+Now you can just open your terminal on your Mac or Linux machine and type `ssh IP.IP.IP.IP` and you will be on the VM.
 
 
 ## Getting Started with  ION
