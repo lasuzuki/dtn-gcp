@@ -20,7 +20,9 @@ Assuming no errors occur with the configuration above, we are now ready to test 
 ionstart -i host1.ionrc -l host1.ltprc -b host1.bprc -p host1.ipnrc
 ````
 
-This command will run the appropriate administration programs, in order, with the appropriate configuration files. Don't worry that the command is lengthy and unwieldly; we will show you how to make a more clean single configuration file later.
+This command will run the appropriate administration programs, in order, with the appropriate configuration files. Don't worry that the command is lengthy and unwieldly; we will show you how to make a more clean single configuration file later. The image below illustrates the start of the administration programs.
+
+<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img3.png" width=400 align=center>
 
 Once the daemon is started, run:
 
