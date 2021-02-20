@@ -46,3 +46,16 @@ ionadmin        .
 After stopping the daemon, it can be restarted using the same procedures as outlined above. Do remember that the ion.log file is still present, and will just keep growing as you experiment with ION.
 
 
+# Creating a single configuration file
+
+To create a single file host1.rc out of the various configuration files defined in the previous section, run this command:
+
+````
+ionscript -i host1.ionrc -p host1.ipnrc -l host1.ltprc -b host1.bprc -O host1.rc
+````
+
+Once you have a single configuration file, starting the ION node is a single command:
+
+````
+ionstart -I host1.rc
+````
