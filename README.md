@@ -78,11 +78,11 @@ The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.n
 On your VM execute the following commands
 
 ````
-sudo apt update
-sudo apt install build-essential -y
-sudo apt-get install wget -y
-wget https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download
-tar xzvf download
+$ sudo apt update
+$ sudo apt install build-essential -y
+$ sudo apt-get install wget -y
+$ wget https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download
+$ tar xzvf download
 ````
 
 
@@ -91,15 +91,15 @@ tar xzvf download
 Follow the standard autoconf method for compiling the project. In the **base ION directory** run:
 
 ```
-./configure
+$ ./configure
 ```
 Then compile with:
 ```
-make
+$ make
 ````
 Finally, install (requires root privileges):
 ```
-sudo make install
+$ sudo make install
 ```
 
 For Linux based systems, you may need to run `sudo ldconfig` with no arguments after install.
@@ -158,11 +158,14 @@ Assuming no errors occur with the configuration files above, we are now ready to
 The execution of the two hosts should be performed using the command
 
 ````
-ionstart -I <hostname>.rc
+$ ionstart -I <hostname>.rc
 ````
 
 The image below illustrates the communication between the two hosts using `bpsink` and `bpsource`.
 
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img6.png" width=600 align=center>
 
-To stop ION in both VM instances, use the command `ionstop`.
+To stop ION in both VM instances, use the command 
+```
+$ ionstop
+```
