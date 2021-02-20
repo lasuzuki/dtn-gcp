@@ -128,7 +128,7 @@ Below we present the configuration files that you should be aware and configure 
 5. `ionsecadmin's` configuration file, enables bundle security to avoid error messages in ion.log - [How To](IONSECconfig_file.md)
 
 ### Testing and Stopping your Connection
-Assuming no errors occur with the configuration files above, we are now ready to test loopback communications, and also learn how to properly stop ION nodes. The below items are covered - [How To](Testing_Stopping.md)
+Assuming no errors occur with the configuration files above, we are now ready to test loopback communications, and also learn how to properly stop ION nodes. The below items are covered in the [How To](Testing_Stopping.md) page.
 
 1. Testing your connection
 2. Stopping the Daemon
