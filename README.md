@@ -117,18 +117,18 @@ The following tools are a few examples of programs availale to you after ION is 
 
 Below we present the configuration files that you should be aware and configure for ION to execute correctly. 
 
-1. `ionadmin's` configuration file, assigns an identity (node number) to the node, optionally configures the resources that will be made available to the node, and specifies contact bandwidths and one-way transmission times. Specifying the "contact plan" is important in deep-space scenarios where the bandwidth must be managed and where acknowledgments must be timed according to propagation delays. It is also vital to the function of contact-graph routing. [How To](IONconfig_file.md)
+1. `ionadmin's` configuration file, assigns an identity (node number) to the node, optionally configures the resources that will be made available to the node, and specifies contact bandwidths and one-way transmission times. Specifying the "contact plan" is important in deep-space scenarios where the bandwidth must be managed and where acknowledgments must be timed according to propagation delays. It is also vital to the function of contact-graph routing - [How To](IONconfig_file.md)
 
-2. `ltpadmin's` configuration file, specifies spans, transmission speeds, and resources for the Licklider Transfer Protocol convergence layer. [How To](LTPconfig_file.md)
+2. `ltpadmin's` configuration file, specifies spans, transmission speeds, and resources for the Licklider Transfer Protocol convergence layer - [How To](LTPconfig_file.md)
 
-3. `bpadmin's` configuration file, specifies all of the open endpoints for delivery on your local end and specifies which convergence layer protocol(s) you intend to use. With the exception of LTP, most convergence layer adapters are fully configured in this file. [How To](BPconfig_file.md)
+3. `bpadmin's` configuration file, specifies all of the open endpoints for delivery on your local end and specifies which convergence layer protocol(s) you intend to use. With the exception of LTP, most convergence layer adapters are fully configured in this file - [How To](BPconfig_file.md)
 
-4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme. [How To](IPNconfig_file.md)
+4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme - [How To](IPNconfig_file.md)
 
-5. `ionsecadmin's` configuration file, enables bundle security to avoid error messages in ion.log [How To](IONSECconfig_file.md)
+5. `ionsecadmin's` configuration file, enables bundle security to avoid error messages in ion.log - [How To](IONSECconfig_file.md)
 
 ### Testing and Stopping your Connection
-Assuming no errors occur with the configuration files above, we are now ready to test loopback communications, and also learn how to properly stop ION nodes. The below items are covered. [How To](Testing_Stopping.md)
+Assuming no errors occur with the configuration files above, we are now ready to test loopback communications, and also learn how to properly stop ION nodes. The below items are covered - [How To](Testing_Stopping.md)
 
 1. Testing your connection
 2. Stopping the Daemon
