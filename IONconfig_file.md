@@ -73,10 +73,12 @@ specifies the maximum rate at which data can be consumed by the node.
 This will make a final configuration file host1.ionrc which looks like this:
 
 ````
+## begin ionadmin
 1 1 ''
 s
 a contact +1 +3600 1 1 100000
 a range +1 +3600 1 1 1
 m production 1000000
 m consumption 1000000
+## end ionadmin
 ````
