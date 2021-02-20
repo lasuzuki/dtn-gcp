@@ -44,7 +44,7 @@ To generate the SSH key pair to connect securely to the virtual machine, follow 
 6. It will display the public key in the terminal. 
 7. Highlight and copy this key
 
-Back in the Google Cloud Console, click Compute Engine, then on VM Instantces. Click on the VM instance you would like to SSH, the click Edit on the top toolbar. At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. On the text field, paste the SSH key and hit `Save`
+Back in the Google Cloud Console, click `Compute Engine`, then on `VM Instances`. Click on the name of the VM instance you would like to SSH. In the new page, at the top toolbar, click `Edit`. At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. On the text field, paste the SSH key and hit `Save`.
 
 Now you can just type `ssh IP.IP.IP.IP` and you will be on the VM.
 
