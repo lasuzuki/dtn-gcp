@@ -1,6 +1,18 @@
 # Testing your connection 
 
-Assuming no errors occur with the configuration above, we are now ready to test loopback communications. In one terminal, we have to run the start script (the one we said that you would have to have earlier). It's right here, in case you forgot to write it down:
+A script has been created which allows a more streamlined configuration and startup of an ION node. This script is called `ionstart`, and it has the following syntax. Don't run it yet; we still have to configure it!
+
+````
+ionstart -I <rc filename >
+````
+
+- `filename`: This is the name for configuration file which the script will attempt to use for the various configuration commands. The script will perform a sanity check on the file, splitting it into command sections appropriate for each of the administration programs.  
+- Configuration information (such as routes, connections, etc) can be specified one of two ways for any of the individual administration programs:
+
+- (Recommended) Creating a configuration file and passing it to ionadmin, bpadmin, ipnadmin, ltpadmin, etc. either directly or via the ionstart helper script.
+- Manually typing configuration commands into the terminal for each administration program.
+
+Assuming no errors occur with the configuration above, we are now ready to test loopback communications. In one terminal, we have to run the start script alongside the configuration files. 
 
 ````
 ionstart -i host1.ionrc -l host1.ltprc -b host1.bprc -p host1.ipnrc
