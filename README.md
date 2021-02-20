@@ -97,7 +97,7 @@ Below we present the configuration files that you should be aware and configure 
 
 3. `bpadmin's` configuration file, specifies all of the open endpoints for delivery on your local end and specifies which convergence layer protocol(s) you intend to use. With the exception of LTP, most convergence layer adapters are fully configured in this file. [How To](BPconfig_file.md)
 
-4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. Our examples use TCP/IP and LTP (over IP/UDP), so it maps endpoint IDs to IP addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme. [How To](IPNconfig_file.md)
+4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme. [How To](IPNconfig_file.md)
 
 5. `ionsecadmin's` configuration file, enables bundle security to avoid error messages in ion.log [How To](IONSECconfig_file.md)
 
