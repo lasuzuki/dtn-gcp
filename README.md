@@ -58,18 +58,8 @@ The following tools are a few examples of programs availale to you after ION is 
 **4. Logging:**
 - By default, the administrative programs will all trigger the creation of a log file called `ion.log` in the directory where the program is called. This means that write-access in your current working directory is required. The log file itself will contain the expected log information from administrative daemons, but it will also contain error reports from simple applications such as bpsink. 
 
-### Starting the ION Daemon
-A script has been created which allows a more streamlined configuration and startup of an ION node. This script is called `ionstart`, and it has the following syntax. Don't run it yet; we still have to configure it!
-
-```ionstart -I <rc filename >```
-
-- `filename`: This is the name for configuration file which the script will attempt to use for the various configuration commands. The script will perform a sanity check on the file, splitting it into command sections appropriate for each of the administration programs.  
-- Configuration information (such as routes, connections, etc) can be specified one of two ways for any of the individual administration programs:
-
-- (Recommended) Creating a configuration file and passing it to ionadmin, bpadmin, ipnadmin, ltpadmin, etc. either directly or via the ionstart helper script.
-- Manually typing configuration commands into the terminal for each administration program.
-
 ### The Configuration Files
+
 Below we present the configuration files that you should be aware and configure for ION to execute correctly. 
 
 1. `ionadmin's` configuration file, assigns an identity (node number) to the node, optionally configures the resources that will be made available to the node, and specifies contact bandwidths and one-way transmission times. Specifying the "contact plan" is important in deep-space scenarios where the bandwidth must be managed and where acknowledgments must be timed according to propagation delays. It is also vital to the function of contact-graph routing. [Description here](IONconfig_file.md)
