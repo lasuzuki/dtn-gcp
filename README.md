@@ -14,7 +14,7 @@ On [Google Cloud Console](console.cloud.google.com), at the top left corner, `cl
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img1.png" width=400 align=center>
 
 
-Click `Create` a new instance. In the new page  add the configurations of the instance:
+Click `Create` a new instance. In the new page, add the configurations of the instance:
 
 **Name**: instance-dtn
 
@@ -26,11 +26,11 @@ Click `Create` a new instance. In the new page  add the configurations of the in
 
 **Firewall**: Select Allow HTTP and HTTPS
 
-Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the `Name` of your instance, the `Zone` where it has been deployed, its `Internal` and `External IPs`.
+Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the `Name` of your instance, the `Zone` where it has been deployed, and both its `Internal` and `External IPs`.
 
 Once the VM is started you can `SSH` directly into the VM.
 
-## SSH in the Google Cloud Instance
+## SSH in the Google Cloud VM Instance
 
 Mac and Linux support SSH connection natively. You just need to generate an SSH key pair (public key/private key) to connect securely to the virtual machine.
 
