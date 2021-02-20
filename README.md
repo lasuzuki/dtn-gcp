@@ -109,4 +109,4 @@ Assuming no errors occur with the configuration files above, we are now ready to
 3. Creating a single configuration file
 
 ### ION File for two nodes using LTP
-Assuming no errors occur with the configuration files above, we are now ready to test a two nodes communications, and also learn how to properly stop ION nodes. The single rc file for `host 1` can be found [here](/rc files/host1.rc) and for `host 2` [here](/rc files/host1.rc).
+Assuming no errors occur with the configuration files above, we are now ready to test a two nodes communications, and also learn how to properly stop ION nodes. The single rc file for `host 1` can be found [here](/rcfiles/host1.rc) and for `host 2` [here](/rcfiles/host1.rc).
