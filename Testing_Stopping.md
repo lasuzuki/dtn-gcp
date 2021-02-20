@@ -63,6 +63,8 @@ ionadmin        .
 
 After stopping the daemon, it can be restarted using the same procedures as outlined above. Do remember that the ion.log file is still present, and will just keep growing as you experiment with ION.
 
+<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img5.png" width=400 align=center>
+
 
 # Creating a single configuration file
 
