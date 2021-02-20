@@ -1,6 +1,6 @@
 # ION Security Admin Configuration File
 
-The `ionsecadmin` section is used to enable bundle security to avoid error messages in ion.log.
+The `ionsecadmin` section is used to enable bundle security. Adding it will also avoid error messages in ion.log.
 
 ## Enable the security of the bundle
 
