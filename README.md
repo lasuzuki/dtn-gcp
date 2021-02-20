@@ -2,6 +2,9 @@
 This project has been developed by Dr Lara Suzuki and supervised by Vint Cerf, Google Inc.
 
 ## Introduction
+
+In this project we demonstrate how to run DTN on Google Cloud using NASA's implementation of the bundle protocol - ION.
+
 The ION (interplanetary overlay network) software is a suite of communication protocol implementations designed to support mission operation communications across an end-to-end interplanetary network, which might include on-board (flight) subnets, in-situ planetary or lunar networks, proximity links, deep space links, and terrestrial internets.
 
 ## Getting Started with Google Cloud VMs
