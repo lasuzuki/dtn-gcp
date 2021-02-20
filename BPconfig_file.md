@@ -8,7 +8,8 @@ This initializes the bundle protocol:
 
 `1` refers to this being the initialization or ''first'' command.
 
-````a scheme ipn 'ipnfw' 'ipnadminep'````
+````a scheme ipn 'ipnfw' 'ipnadminep'
+````
 
 This adds support for a new Endpoint Identifier (EID) scheme:
 
@@ -23,7 +24,8 @@ This adds support for a new Endpoint Identifier (EID) scheme:
 `'ipnadminep'` is the name of the IPN scheme's custody transfer management daemon.
 
 
-````a endpoint ipn:1.0 q````
+````a endpoint ipn:1.0 q
+````
 
 This command establishes this BP node's membership in a BP endpoint:
 
@@ -44,7 +46,8 @@ a endpoint ipn:1.2 q
 
 These specify two more endpoints that will be used for test traffic.
 
-````a protocol ltp 1400 100````
+````a protocol ltp 1400 100
+````
 
 This command adds support for a convergence-layer protocol:
 
@@ -61,6 +64,7 @@ This command adds support for a convergence-layer protocol:
 
 ````a induct ltp 1 ltpcli
 ````
+
 This command adds an induct, through which incoming bundles can be received from other nodes:
 
 `a` means that this command will add something.
@@ -76,6 +80,7 @@ This command adds an induct, through which incoming bundles can be received from
 
 ````a outduct ltp 1 ltpclo
 ````
+
 This command adds an outduct, through which outgoing bundles can be sent to other nodes:
 
 `a` means that this command will add something.
@@ -87,6 +92,7 @@ This command adds an outduct, through which outgoing bundles can be sent to othe
 `1` is the identifier of the outduct, the ID of the convergence-layer protocol induct of some remote node. 
 
 `ltpclo` is the name of the daemon used to implement the outduct.
+
 
 ````s````
 
