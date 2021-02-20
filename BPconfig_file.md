@@ -40,7 +40,8 @@ This command establishes this BP node's membership in a BP endpoint:
 `q` means that the behavior of the engine, upon receipt of a new bundle for this endpoint, is to queue it until an application accepts the bundle. The alternative is to silently discard the bundle if no application is actively listening; this is specified by replacing q with x.
 
 
-````a endpoint ipn:1.1 q
+````
+a endpoint ipn:1.1 q
 a endpoint ipn:1.2 q
 ````
 
