@@ -111,6 +111,7 @@ This command starts the bundle engine including all daemons for the inducts and 
 That means that the entire configuration file host1.bprc looks like this:
 
 ````
+## begin bpadmin
 1
 a scheme ipn 'ipnfw' 'ipnadminep'
 a endpoint ipn:1.0 q
@@ -120,4 +121,5 @@ a protocol ltp 1400 100
 a induct ltp 1 ltpcli
 a outduct ltp 1 ltpclo
 s
+## end bpadmin
 ````

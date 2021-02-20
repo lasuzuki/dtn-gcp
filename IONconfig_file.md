@@ -13,8 +13,11 @@ The configuration file lines are as follows:
 This command will initialize the ion node to be node number 1.
 
 `1` refers to this being the initialization or `first` command.
+
 `1` specifies the node number of this ion node. (IPN node 1).
+
 `''` specifies the name of a file of configuration commands for the node's use of shared memory and other resources (suitable defaults are applied if you leave this argument as an empty string).
+
 `s`
 
 This will start the ION node. It mostly functions to officially "start" the node in a specific instant; it causes all of ION's protocol-independent background daemons to start running.
@@ -26,7 +29,7 @@ a contact +1 +3600 1 1 100000
 specifies a transmission opportunity for a given time duration between two connected nodes (or, in this case, a loopback transmission opportunity).
 
 `a` adds this entry in the configuration table.
-`contac` specifies that this entry defines a transmission opportunity.
+`contact` specifies that this entry defines a transmission opportunity.
 `+1` is the start time for the contact (relative to when the s command is issued).
 `+3600` is the end time for the contact (relative to when the s command is issued).
 `1` is the source node number.
@@ -70,10 +73,12 @@ specifies the maximum rate at which data can be consumed by the node.
 This will make a final configuration file host1.ionrc which looks like this:
 
 ````
+## begin ionadmin
 1 1 ''
 s
 a contact +1 +3600 1 1 100000
 a range +1 +3600 1 1 1
 m production 1000000
 m consumption 1000000
+## end ionadmin
 ````

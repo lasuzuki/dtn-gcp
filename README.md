@@ -1,12 +1,15 @@
-# DTN 101 - Configuring DTN on Google Cloud
-By Larissa Suzuki and Vint Cerf, Google Inc
+# DTN 101 - Running the Interplanetary Internet on Google Cloud
+This project has been developed by Dr Lara Suzuki and supervised by Vint Cerf, Google Inc.
 
 ## Introduction
+
+In this project we demonstrate how to run DTN on Google Cloud using NASA's implementation of the bundle protocol - ION.
+
 The ION (interplanetary overlay network) software is a suite of communication protocol implementations designed to support mission operation communications across an end-to-end interplanetary network, which might include on-board (flight) subnets, in-situ planetary or lunar networks, proximity links, deep space links, and terrestrial internets.
 
 ## Getting Started with Google Cloud VMs
 
-On [Google Cloud Console](console.cloud.google.com), at the top left, `click` on the hamburger icon. Scrow down until you find `Compute Engine`. Hove over `Compute Engine` and then `click` on `VM Instances`.
+On [Google Cloud Console](console.cloud.google.com), at the top left corner, `click` on the hamburger icon. Scrow down until you find `Compute Engine`. Hove over `Compute Engine` and then `click` on `VM Instances`.
 
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img1.png" width=400 align=center>
 
@@ -26,6 +29,25 @@ Click `Create` a new instance. In the new page  add the configurations of the in
 Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the `Name` of your instance, the `Zone` where it has been deployed, its `Internal` and `External IPs`.
 
 Once the VM is started you can `SSH` directly into the VM.
+
+## SSH in the Google Cloud Instance
+
+Mac and Linux support SSH connection natively. You just need to generate an SSH key pair (public key/private key) to connect securely to the virtual machine.
+
+To generate the SSH key pair to connect securely to the virtual machine, follow these steps:
+
+1. Enter the following command in Terminal: ssh-keygen -t rsa . 
+2. It will start the key generation process. 
+3. You will be prompted to choose the location to store the SSH key pair. 
+4. Press `ENTER` to accept the default location
+5. Now run the following command: `cat ~/.ssh/id_rsa.pub .` 
+6. It will display the public key in the terminal. 
+7. Highlight and copy this key
+
+Back in the Google Cloud Console, click `Compute Engine`, then on `VM Instances`. Click on the name of the VM instance you would like to SSH. In the new page, at the top toolbar, click `Edit`. At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. On the text field, paste the SSH key and hit `Save`.
+
+Now you can just type `ssh IP.IP.IP.IP` and you will be on the VM.
+
 
 ## Getting Started with  ION
 
@@ -97,7 +119,7 @@ Below we present the configuration files that you should be aware and configure 
 
 3. `bpadmin's` configuration file, specifies all of the open endpoints for delivery on your local end and specifies which convergence layer protocol(s) you intend to use. With the exception of LTP, most convergence layer adapters are fully configured in this file. [How To](BPconfig_file.md)
 
-4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. Our examples use TCP/IP and LTP (over IP/UDP), so it maps endpoint IDs to IP addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme. [How To](IPNconfig_file.md)
+4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme. [How To](IPNconfig_file.md)
 
 5. `ionsecadmin's` configuration file, enables bundle security to avoid error messages in ion.log [How To](IONSECconfig_file.md)
 

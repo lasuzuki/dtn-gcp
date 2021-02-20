@@ -9,6 +9,7 @@ Given to ltpadmin as a file or from the command line, this file configures the L
 This command will initialize the LTP engine:
 
 `1` refers to this being the initialization or ''first'' command.
+
 `32` is an estimate of the maximum total number of LTP ''block'' transmission sessions - for all spans - that will be concurrently active in this LTP engine. It is used to size a hash table for session lookups.
 
 
@@ -51,7 +52,9 @@ This means that the entire configuration file `host1.ltprc` looks like this:
 
 
 ````
+## begin ltpadmin
 1 32
 a span 1 32 32 1400 10000 1 'udplso localhost:1113'
 s 'udplsi localhost:1113'
+## end ltpadmin
 ````
