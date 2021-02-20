@@ -1,5 +1,5 @@
 # DTN 101 - Running the Interplanetary Internet on Google Cloud :rocket:
-This project has been developed by Dr Lara Suzuki and supervised by Vint Cerf :technologist:, both at Google Inc. 
+This project has been developed by Dr Lara Suzuki :woman_technologist: and supervised by Vint Cerf :technologist:, both at Google Inc. 
 
 ## Introduction
 
