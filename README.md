@@ -6,6 +6,8 @@ The ION (interplanetary overlay network) software is a suite of communication pr
 
 ## Getting Started with Google Cloud VMs
 
+On [Google Cloud Console](
+Google Cloud Consoleconsole.cloud.google.com), at the top left click on the hamburger icon. Scrow down until you find `Compute Engine`. Scrow over Compute Engine and then `VM Instances` ![alt text](https://github.com/lasuzuki/dtn-gcp/blob/img1.png?raw=true "Google Cloud Console")
 
 
 ## Getting Started with  ION
