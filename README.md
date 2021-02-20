@@ -30,6 +30,25 @@ Hit `Create`. Once the instance is created you will be redirected to the VM Inst
 
 Once the VM is started you can `SSH` directly into the VM.
 
+## SSH in the Google Cloud Instance
+
+Mac and Linux support SSH connection natively. You just need to generate an SSH key pair (public key/private key) to connect securely to the virtual machine.
+
+To generate the SSH key pair to connect securely to the virtual machine, follow these steps:
+
+1. Enter the following command in Terminal: ssh-keygen -t rsa . 
+2. It will start the key generation process. 
+3. You will be prompted to choose the location to store the SSH key pair. 
+4. Press `ENTER` to accept the default location
+5. Now run the following command: `cat ~/.ssh/id_rsa.pub .` 
+6. It will display the public key in the terminal. 
+7. Highlight and copy this key
+
+Back in the Google Cloud Console, click Compute Engine, then on VM Instantces. Click on the VM instance you would like to SSH, the click Edit on the top toolbar. At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. On the text field, paste the SSH key and hit `Save`
+
+Now you can just type `ssh IP.IP.IP.IP` and you will be on the VM.
+
+
 ## Getting Started with  ION
 
 The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download)
