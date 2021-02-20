@@ -33,9 +33,20 @@ Once the VM is started you can SSH directly into the VM.
 
 The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download)
 
+On your VM execute the following commands
+
+````
+sudo apt update
+sudo apt install build-essential -y
+sudo apt-get install wget -y
+wget https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download
+tar xzvf download
+````
+
+
 ### Compiling ION using autotools
 
-Follow the standard autoconf method for compiling the project. In the base ION directory run:
+Follow the standard autoconf method for compiling the project. In the **base ION directory** run:
 
 ```
 ./configure
