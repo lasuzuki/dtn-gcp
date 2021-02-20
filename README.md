@@ -8,7 +8,7 @@ The ION (interplanetary overlay network) software is a suite of communication pr
 
 
 
-### Getting Started with  ION
+## Getting Started with  ION
 
 The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download)
 
