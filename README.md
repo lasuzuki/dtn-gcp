@@ -10,7 +10,9 @@ On [Google Cloud Console](
 Google Cloud Consoleconsole.cloud.google.com), at the top left click on the hamburger icon. Scrow down until you find `Compute Engine`. Scrow over Compute Engine and then `VM Instances`.
 
 
- ![Alt text](/blob/img1.png?raw=true "Google Cloud Console") 
+ ![image](/blob/img1.png)
+
+<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img1.png" width=300 align=right>
 
 
 Click `Create` a new instance, then add the configurations of the instance:
