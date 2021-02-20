@@ -32,7 +32,7 @@ bpsink ipn:1.1 &
 
 This will begin constantly listening on the Endpoint ID with the endpoint_number 1 on service_number 1, which is used for testing.
 
-Now open another terminal and run the command:
+Now run the command:
 
 ````
 bpsource ipn:1.1
@@ -45,7 +45,12 @@ This will begin sending messages you type to the Endpoint ID ipn:1.1, which is c
 
 # Stopping the Daemon
 
-As the daemon launches many ducts and helper applications, it can be complicated to turn it all off. To help this, we provided a script. The script similar to ionstart exists called `ionstop`, which tears down the ion node in one step. You can call it like so:
+As the daemon launches many ducts and helper applications, it can be complicated to turn it all off. The script similar to `ionstart` exists called `ionstop`, which tears down the ion node in one step. You can call it like so:
+
+````
+ionstop
+````
+The commands part of the `ionstop` script is shown below.
 
 ````
 # shell script to stop node
