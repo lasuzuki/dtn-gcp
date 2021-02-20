@@ -52,7 +52,9 @@ This means that the entire configuration file `host1.ltprc` looks like this:
 
 
 ````
+## begin ltpadmin
 1 32
 a span 1 32 32 1400 10000 1 'udplso localhost:1113'
 s 'udplsi localhost:1113'
+## end ltpadmin
 ````
