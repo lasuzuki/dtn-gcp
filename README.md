@@ -36,7 +36,7 @@ Mac and Linux support SSH connection natively. You just need to generate an SSH 
 
 To generate the SSH key pair to connect securely to the virtual machine, follow these steps:
 
-1. Enter the following command in Terminal: ssh-keygen -t rsa . 
+1. Enter the following command in Terminal: `ssh-keygen -t rsa .` 
 2. It will start the key generation process. 
 3. You will be prompted to choose the location to store the SSH key pair. 
 4. Press `ENTER` to accept the default location
