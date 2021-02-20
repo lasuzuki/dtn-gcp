@@ -40,9 +40,11 @@ The following tools are a few examples of programs availale to you after ION is 
 - `ionstart` is a script which completely configures an ION node with the proper configuration file(s).
 - `ionstop` is a script which completely tears down the ION node.
 - `ionscript` is a script which aides in the creation and management of configuration files to be used with ionstart.
+
 **2. Simple Sending and Receiving:**
 - `bpsource` and `bpsink` are for testing basic connectivity between endpoints. bpsink listens for and then displays messages sent by bpsource.
 - `bpsendfile` and `bprecvfile` are used to send files between ION nodes.
+
 **3. Testing and Benchmarking:**
 - `bpdriver` benchmarks a connection by sending bundles in two modes: request-response and streaming.
 - `bpecho` issues responses to bpdriver in request-response mode.
