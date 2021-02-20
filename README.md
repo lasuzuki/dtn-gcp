@@ -54,7 +54,10 @@ Back in the Google Cloud Console:
 
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img2.png" width=400 align=center>
 
-At the bottom of the page, locate the `SSH Keys` section. Click on `Add Item`. In the `Enter public key` text field, paste your SSH key and hit `Save`.
+5. At the bottom of the page, locate the `SSH Keys` section. 
+6. Click on `Add Item`. 
+7. In the `Enter public key` text field, paste your SSH key 
+8. Hit `Save`
 
 Now you can just open your terminal on your Mac or Linux machine and type `ssh IP.IP.IP.IP` and you will be on the VM (IP.IP.IP.IP is the external IP of the VM).
 
