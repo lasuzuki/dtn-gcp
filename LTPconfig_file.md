@@ -9,6 +9,7 @@ Given to ltpadmin as a file or from the command line, this file configures the L
 This command will initialize the LTP engine:
 
 `1` refers to this being the initialization or ''first'' command.
+
 `32` is an estimate of the maximum total number of LTP ''block'' transmission sessions - for all spans - that will be concurrently active in this LTP engine. It is used to size a hash table for session lookups.
 
 
