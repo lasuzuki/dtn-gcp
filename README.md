@@ -14,17 +14,19 @@ On [Google Cloud Console](console.cloud.google.com), at the top left corner, `cl
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img1.png" width=400 align=center>
 
 
-Click `Create` a new instance. In the new page, add the configurations of the instance:
+When prompted, click `Create` a new instance. In the new page, add the configurations of the instance:
 
-**Name**: instance-dtn
+1. **Name**: instance-dtn
 
-**Region**: Select the reagion closest to you
+2. **Region**: Select the reagion closest to you
 
-**Machine Configuration**: Selec the configuration that will suit your needs. I have selected the default `E2 Series` and **Machine type** `e2-medium (2vCPU, 4 BG memory)`
+3. **Machine Configuration**: Selec the configuration that will suit your needs. I have selected the default `E2 Series` and **Machine type** `e2-medium (2vCPU, 4 BG memory)`
 
-**Identity and API Access**: Select `Allow full access to all Cloud APIs`. We will be doing a tutorial on using Cloud Vision, so make sure you enable the APIs
+4. **Boot Disk**: Debian GNU/Linux 10 (buster)
 
-**Firewall**: Select Allow HTTP and HTTPS
+5. **Identity and API Access**: Select `Allow full access to all Cloud APIs`. We will be doing a tutorial on using Cloud Vision, so make sure you enable the APIs
+
+6. **Firewall**: Select Allow HTTP and HTTPS
 
 Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the `Name` of your instance, the `Zone` where it has been deployed, and both its `Internal` and `External IPs`.
 
