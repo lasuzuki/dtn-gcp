@@ -82,4 +82,5 @@ Assuming no errors occur with the configuration files above, we are now ready to
 
 1. Testing your connection
 2. Stopping the Daemon
+3. Creating a single configuration file
 
