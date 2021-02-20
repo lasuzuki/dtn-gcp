@@ -13,8 +13,10 @@ This command defines an egress plan for bundles to be transmitted to the local n
 `1` is the node number of the remote node. In this case, that is the local node's own node number; we're configuring for loopback.
 `ltp/1` is the identifier of the outduct through which to transmit bundles in order to convey them to this ''remote'' node.
 
-This means that the entire configuration file host1.ipnrc looks like this:
+This means that the entire configuration file `host1.ipnrc` looks like this:
 
 ````
+## begin ipnadmin
 a plan 1 ltp/1
+## end ipnadmin
 ````
