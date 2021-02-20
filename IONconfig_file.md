@@ -6,11 +6,11 @@ This file specifies contact times and one-way light times between nodes. This is
 
 The configuration file lines are as follows:
 
-````
-**1 1 ''**
-````
+## Initialize the ion node to be node number 1
 
-This command will initialize the ion node to be node number 1.
+````
+1 1 ''
+````
 
 `1` refers to this being the initialization or `first` command.
 
@@ -18,9 +18,13 @@ This command will initialize the ion node to be node number 1.
 
 `''` specifies the name of a file of configuration commands for the node's use of shared memory and other resources (suitable defaults are applied if you leave this argument as an empty string).
 
+## Start the ION node
+
 `s`
 
 This will start the ION node. It mostly functions to officially "start" the node in a specific instant; it causes all of ION's protocol-independent background daemons to start running.
+
+## Specify a transmission opportunity
 
 ````
 a contact +1 +3600 1 1 100000
@@ -42,6 +46,8 @@ specifies a transmission opportunity for a given time duration between two conne
 
 `100000` is the maximum rate at which data is expected to be transmitted from the source node to the destination node during this time period (here, it is 100000 bytes / second).
 
+## Specify a distance between nodes
+
 ````
 a range +1 +3600 1 1 1
 ````
@@ -62,11 +68,12 @@ specifies a distance between nodes, expressed as a number of light seconds, wher
 
 `1` is the distance between the nodes, measured in light seconds, also sometimes called the "one-way light time" (here, one light second is the expected distance).
 
+
+## Specify the maximum rate at which data will be produced by the node
+
 ````
 m production 1000000
 ````
-
-specifies the maximum rate at which data will be produced by the node.
 
 `m` specifies that this is a management command.
 
@@ -74,11 +81,12 @@ specifies the maximum rate at which data will be produced by the node.
 
 `1000000` specifies that at most 1000000 bytes/second will be produced by this node.
 
+
+## Specify the maximum rate at which data can be consumed by the node
+
 ````
 m consumption 1000000
 ````
-
-specifies the maximum rate at which data can be consumed by the node.
 
 `m` specifies that this is a management command.
 
@@ -86,7 +94,8 @@ specifies the maximum rate at which data can be consumed by the node.
 
 `1000000` specifies that at most 1000000 bytes/second will be consumed by this node.
 
-This will make a final configuration file host1.ionrc which looks like this:
+
+## Final configuration file - host1.ionrc
 
 ````
 ## begin ionadmin
