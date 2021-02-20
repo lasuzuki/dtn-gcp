@@ -2,14 +2,19 @@
 
 Given to ltpadmin as a file or from the command line, this file configures the LTP engine itself. We will assume the local IPN node number is 1; in ION, node numbers are used as the LTP engine numbers.
 
-````1 32````
+````
+1 32
+````
 
 This command will initialize the LTP engine:
 
 `1` refers to this being the initialization or ''first'' command.
 `32` is an estimate of the maximum total number of LTP ''block'' transmission sessions - for all spans - that will be concurrently active in this LTP engine. It is used to size a hash table for session lookups.
 
-````a span 1 32 32 1400 10000 1 'udplso localhost:1113'````
+
+````
+a span 1 32 32 1400 10000 1 'udplso localhost:1113'
+````
 
 This command defines an LTP engine 'span':
 
@@ -31,14 +36,19 @@ The second `32` specifies the maximum number of LTP ''block'' reception sessions
 
 ````'udplso localhost:1113'```` is the command used to implement the link itself. The link is implemented via UDP, sending segments to the localhost Internet interface on port 1113 (the IANA default port for LTP over UDP).
 
-````s 'udplsi localhost:1113'````
+
+````
+s 'udplsi localhost:1113'
+````
 
 Starts the ltp engine itself:
 
 `s` starts the ltp engine.
-````'udplsi localhost:1113'```` is the link service input task. In this case, the input ''duct' is a UDP listener on the local host using port 1113.
+
+`'udplsi localhost:1113'` is the link service input task. In this case, the input ''duct' is a UDP listener on the local host using port 1113.
 
 This means that the entire configuration file `host1.ltprc` looks like this:
+
 
 ````
 1 32
