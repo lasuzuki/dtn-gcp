@@ -1,4 +1,4 @@
-# DTN 101 - Configuring DTN on Google Cloud
+# DTN 101 - Running DTN on Google Cloud
 This project has been developed by Dr Lara Suzuki and supervised by Vint Cerf, Google Inc.
 
 ## Introduction
