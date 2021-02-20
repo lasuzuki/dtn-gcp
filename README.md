@@ -13,11 +13,11 @@ Google Cloud Consoleconsole.cloud.google.com), at the top left click on the hamb
 
 Click `Create` a new instance, then add the configurations of the instance:
 
-*Name*: instance-dtn
-*Region*: Select the reagion closest to you
-*Machine Configuration*: Selec the configuration that will suit your needs. I have selected the default `E2 Series` and *Machine type* `e2-medium (2vCPU, 4 BG memory)`
-*Identity and API Access*: Select `Allow full access to all Cloud APIs`. We will be doing a tutorial on using Cloud Vision, so make sure you enable the APIs
-*Firewall*: Select Allow HTTP and HTTPS
+**Name**: instance-dtn
+**Region**: Select the reagion closest to you
+**Machine Configuration**: Selec the configuration that will suit your needs. I have selected the default `E2 Series` and **Machine type** `e2-medium (2vCPU, 4 BG memory)`
+**Identity and API Access**: Select `Allow full access to all Cloud APIs`. We will be doing a tutorial on using Cloud Vision, so make sure you enable the APIs
+**Firewall**: Select Allow HTTP and HTTPS
 
 Hit `Create`. Once the instance is created you will be redirected to the VM Instances page where you can see the Name of your instance, the Zone where it has been deployed, its Internal and External IPs.
 
