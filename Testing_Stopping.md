@@ -12,6 +12,8 @@ ionstart -I <rc filename >
 - (Recommended) Creating a configuration file and passing it to ionadmin, bpadmin, ipnadmin, ltpadmin, etc. either directly or via the ionstart helper script.
 - Manually typing configuration commands into the terminal for each administration program.
 
+# Loopback communication
+
 Assuming no errors occur with the configuration above, we are now ready to test loopback communications. In one terminal, we have to run the start script alongside the configuration files. 
 
 ````
