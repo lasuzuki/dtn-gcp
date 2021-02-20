@@ -29,11 +29,17 @@ a contact +1 +3600 1 1 100000
 specifies a transmission opportunity for a given time duration between two connected nodes (or, in this case, a loopback transmission opportunity).
 
 `a` adds this entry in the configuration table.
+
 `contact` specifies that this entry defines a transmission opportunity.
+
 `+1` is the start time for the contact (relative to when the s command is issued).
+
 `+3600` is the end time for the contact (relative to when the s command is issued).
+
 `1` is the source node number.
+
 `1` is the destination node number.
+
 `100000` is the maximum rate at which data is expected to be transmitted from the source node to the destination node during this time period (here, it is 100000 bytes / second).
 
 ````
@@ -43,11 +49,17 @@ a range +1 +3600 1 1 1
 specifies a distance between nodes, expressed as a number of light seconds, where each element has the following meaning:
 
 `a` adds this entry in the configuration table.
+
 `range` declares that what follows is a distance between two nodes.
+
 `+1` is the earliest time at which this is expected to be the distance between these two nodes (relative to the time s was issued).
+
 `+3600` is the latest time at which this is still expected to be the distance between these two nodes (relative to the time s was issued).
+
 `1` is one of the two nodes in question.
+
 `1` is the other node.
+
 `1` is the distance between the nodes, measured in light seconds, also sometimes called the "one-way light time" (here, one light second is the expected distance).
 
 ````
@@ -57,7 +69,9 @@ m production 1000000
 specifies the maximum rate at which data will be produced by the node.
 
 `m` specifies that this is a management command.
+
 `production` declares that this command declares the maximum rate of data production at this ION node.
+
 `1000000` specifies that at most 1000000 bytes/second will be produced by this node.
 
 ````
@@ -67,7 +81,9 @@ m consumption 1000000
 specifies the maximum rate at which data can be consumed by the node.
 
 `m` specifies that this is a management command.
+
 `consumption` declares that this command declares the maximum rate of data consumption at this ION node.
+
 `1000000` specifies that at most 1000000 bytes/second will be consumed by this node.
 
 This will make a final configuration file host1.ionrc which looks like this:
