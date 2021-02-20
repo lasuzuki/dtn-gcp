@@ -145,4 +145,4 @@ ionstart -I <hostname>.rc
 
 The image below illustrates the communication between the two hosts using `bpsink` and `bpsource`.
 
-<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img2.png" width=600 align=center>
+<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img6.png" width=600 align=center>
