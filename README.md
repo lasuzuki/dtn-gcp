@@ -65,15 +65,17 @@ A script has been created which allows a more streamlined configuration and star
 - Manually typing configuration commands into the terminal for each administration program.
 
 ### The Configuration Files
-Below we present the configuration files that you should be aware and configure for ION to execute correctly. An overview of the configuration files and their usage an be found [here](Configuration_Files.md)
+Below we present the configuration files that you should be aware and configure for ION to execute correctly. 
 
-1. The Ion Configuration File
-2. The Licklider Transfer Protocol Configuration File
-3. The Bundle Protocol Configuration File
-4. The IPN Routing Configuration File
-5. The ION Security Configuration file
-6. Testing your connection
-7. Stopping the Daemon
+1. `ionadmin's` configuration file, assigns an identity (node number) to the node, optionally configures the resources that will be made available to the node, and specifies contact bandwidths and one-way transmission times. Specifying the "contact plan" is important in deep-space scenarios where the bandwidth must be managed and where acknowledgments must be timed according to propagation delays. It is also vital to the function of contact-graph routing. [HERE](IONconfig_file.md)
+
+2. `ltpadmin's` configuration file, specifies spans, transmission speeds, and resources for the Licklider Transfer Protocol convergence layer.
+
+3. `bpadmin's` configuration file, specifies all of the open endpoints for delivery on your local end and specifies which convergence layer protocol(s) you intend to use. With the exception of LTP, most convergence layer adapters are fully configured in this file.
+
+4. `ipnadmin's` configuration file, maps endpoints at "neighboring" (topologically adjacent, directly reachable) nodes to convergence-layer addresses. Our examples use TCP/IP and LTP (over IP/UDP), so it maps endpoint IDs to IP addresses. This file populates the ION analogue to an ARP cache for the "ipn" naming scheme.
+
+5. `ionsecadmin's` configuration file, enables bundle security to avoid error messages in ion.log
 
 ### Testing and Stopping your Connection
 Assuming no errors occur with the configuration files above, we are now ready to test loopback communications, and also learn how to properly stop ION nodes. The below items are covered [here](Testing_Stopping.md)
