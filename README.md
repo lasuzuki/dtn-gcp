@@ -76,6 +76,8 @@ Below we present the configuration files that you should be aware and configure 
 7. Stopping the Daemon
 
 ### Testing and Stopping your Connection
+Assuming no errors occur with the configuration files above, we are now ready to test loopback communications, and also learn how to properly stop ION nodes. The below items are covered [here](Testing_Stopping.md)
+
 1. [Testing your connection]
 2. [Stopping the Daemon]
 
