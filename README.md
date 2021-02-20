@@ -11,7 +11,7 @@ Google Cloud Consoleconsole.cloud.google.com), at the top left click on the hamb
 
  ![Alt text](/blob/img1.png?raw=true "Google Cloud Console") 
 
-Click create a new instance, then add the configurations of the instance:
+Click `Create` a new instance, then add the configurations of the instance:
 
 *Name*: instance-dtn
 *Region*: Select the reagion closest to you
