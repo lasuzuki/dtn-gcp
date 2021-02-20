@@ -55,7 +55,7 @@ Now you can just open your terminal on your Mac or Linux machine and type `ssh I
 
 ## Getting Started with  ION
 
-The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download)
+The latest version of ION (4.0.1) can be downloaded [here](https://sourceforge.net/projects/ion-dtn/files/ion-open-source-4.0.1.tar.gz/download). ION 4.0.1 uses the [version 7 of the Bundle Protocol](https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31)
 
 On your VM execute the following commands
 
