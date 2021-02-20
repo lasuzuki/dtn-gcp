@@ -2,19 +2,17 @@
 
 Given to bpadmin either as a file or from the daemon command line, this file configures the endpoints through which this node's Bundle Protocol Agent (BPA) will communicate. We will assume the local BPA's node number is 1; as for LTP, in ION node numbers are used to identify bundle protocol agents.
 
+## Initialise the bundle protocol
 ````
 1
 ````
 
-This initializes the bundle protocol:
-
 `1` refers to this being the initialization or ''first'' command.
 
+## Add support for a new Endpoint Identifier (EID) scheme
 ````
 a scheme ipn 'ipnfw' 'ipnadminep'
 ````
-
-This adds support for a new Endpoint Identifier (EID) scheme:
 
 `a` means that this command will add something.
 
@@ -26,12 +24,11 @@ This adds support for a new Endpoint Identifier (EID) scheme:
 
 `'ipnadminep'` is the name of the IPN scheme's custody transfer management daemon.
 
+## Establishes the BP node's membership in a BP endpoint
 
 ````
 a endpoint ipn:1.0 q
 ````
-
-This command establishes this BP node's membership in a BP endpoint:
 
 `a` means that this command will add something.
 
@@ -44,18 +41,18 @@ This command establishes this BP node's membership in a BP endpoint:
 `q` means that the behavior of the engine, upon receipt of a new bundle for this endpoint, is to queue it until an application accepts the bundle. The alternative is to silently discard the bundle if no application is actively listening; this is specified by replacing q with x.
 
 
+## Specify two more endpoints that will be used for test traffic
+
 ````
 a endpoint ipn:1.1 q
 a endpoint ipn:1.2 q
 ````
 
-These specify two more endpoints that will be used for test traffic.
+## Add support for a convergence-layer protocol
 
 ````
 a protocol ltp 1400 100
 ````
-
-This command adds support for a convergence-layer protocol:
 
 `a` means that this command will add something.
 
@@ -68,11 +65,11 @@ This command adds support for a convergence-layer protocol:
 `100` is the estimated size of the protocol transmission overhead (in bytes) per convergence-layer procotol data unit sent.
 
 
+## Add an induct, through which incoming bundles can be received from other nodes
+
 ````
 a induct ltp 1 ltpcli
 ````
-
-This command adds an induct, through which incoming bundles can be received from other nodes:
 
 `a` means that this command will add something.
 
@@ -85,11 +82,12 @@ This command adds an induct, through which incoming bundles can be received from
 `ltpcli` is the name of the daemon used to implement the induct.
 
 
+
+## Add an outduct, through which outgoing bundles can be sent to other nodes
+
 ````
 a outduct ltp 1 ltpclo
 ````
-
-This command adds an outduct, through which outgoing bundles can be sent to other nodes:
 
 `a` means that this command will add something.
 
@@ -102,13 +100,12 @@ This command adds an outduct, through which outgoing bundles can be sent to othe
 `ltpclo` is the name of the daemon used to implement the outduct.
 
 
+## Start the bundle engine including all daemons for the inducts and outducts
 ````
 s
 ````
 
-This command starts the bundle engine including all daemons for the inducts and outducts.
-
-That means that the entire configuration file host1.bprc looks like this:
+## Final configuration file - `host1.bprc`
 
 ````
 ## begin bpadmin
