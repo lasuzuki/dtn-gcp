@@ -50,3 +50,5 @@ The following tools are a few examples of programs availale to you after ION is 
 - `bpecho` issues responses to bpdriver in request-response mode.
 - `bpcounter` acts as receiver for streaming mode, outputting markers on receipt of data from bpdriver and computing throughput metrics.
 
+**4. Logging:**
+- by default, the administrative programs will all trigger the creation of a log file called `ion.log` in the directory where the program is called. This means that write-access in your current working directory is required. The log file itself will contain the expected log information from administrative daemons, but it will also contain error reports from simple applications such as bpsink. 
