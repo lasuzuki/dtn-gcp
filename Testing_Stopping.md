@@ -62,7 +62,7 @@ sleep 1
 ionadmin        .
 ````
 
-After stopping the daemon, it can be restarted using the same procedures as outlined above. Do remember that the ion.log file is still present, and will just keep growing as you experiment with ION.
+After stopping the daemon, you can start fresh with a brand-new node.  To do that, you first need to run the `killm` script (to destroy all of the persistent state objects in shared memory); after that, you can run your `ionstart` script again, whether with changes or not. Do remember that the `ion.log` file is still present, and will just keep growing as you experiment with ION. You can of course periodically delete entries out of the ion.log file.
 
 <img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img5.png" width=600 align=center>
 
@@ -81,13 +81,13 @@ Once you have a single configuration file, starting the ION node is a single com
 ionstart -I host1.rc
 ````
 
-## ION File for two nodes using LTP
+## Loopback testing using LTP
 Assuming no errors occur with the configuration files above, we are now ready to test a `Loopback` communication, and also learn how to properly stop the ION node. The single rc file for `host 1` can be found [here](/rcfiles/host1.rc).
 
 The execution of the host should be performed using the command
 
 ````
-$ ionstart -I <hostname>.rc
+$ ionstart -I host1.rc
 ````
 
 The image below illustrates the loopback communication using `bpsink` and `bpsource`.
