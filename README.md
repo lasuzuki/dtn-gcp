@@ -29,7 +29,7 @@ When prompted, click `Create` a new instance. In the new page, add the configura
 
 2. **Region**: Select the reagion closest to you
 
-3. **Machine Configuration**: Selec the configuration that will suit your needs. I have selected the default `E2 Series` and **Machine type** `e2-medium (2vCPU, 4 BG memory)`
+3. **Machine Configuration**: Select the configuration that will suit your needs. I have selected the default `E2 Series` and **Machine type** `e2-medium (2vCPU, 4 GB memory)`
 
 4. **Boot Disk**: Debian GNU/Linux 10 (buster)
 
@@ -114,9 +114,9 @@ The following tools are a few examples of programs availale to you after ION is 
 - `bsspadmin` is the administrative interface for operations of the Bundle Streaming Service Protocol on the local ion node.
 - `bpadmin` is the administrative interface for bundle protocol operations on the local ion node.
 - `ipnadmin` is the administration and configuration interface for the IPN addressing system and routing on the ION node. (ipn:)
-- `killm` is a script which tears down the daemon and any running ducts on a single machine (use ionstop instead).
 - `ionstart` is a script which completely configures an ION node with the proper configuration file(s).
-- `ionstop` is a script which completely tears down the ION node.
+- `ionstop` is a script which cleanly shut down all of the daemon processes.
+- `killm` is a script which releases all of the shared-memory resources that had been allocated to the state of the node.  This actually destroys the node and enables a subsequent clean new start (the “ionstart” script) to succeed.
 - `ionscript` is a script which aides in the creation and management of configuration files to be used with ionstart.
 
 **2. Simple Sending and Receiving:**
