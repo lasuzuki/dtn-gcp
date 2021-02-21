@@ -84,3 +84,23 @@ Once you have a single configuration file, starting the ION node is a single com
 ````
 ionstart -I host1.rc
 ````
+
+## ION File for two nodes using LTP
+Assuming no errors occur with the configuration files above, we are now ready to test a `Loopback` communication, and also learn how to properly stop the ION node. The single rc file for `host 1` can be found [here](/rcfiles/host1.rc).
+
+The execution of the host should be performed using the command
+
+````
+$ ionstart -I <hostname>.rc
+````
+
+The image below illustrates the loopback communication using `bpsink` and `bpsource`.
+
+<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img6.png" width=600 align=center>
+
+To stop ION in the VM instance, use the command 
+
+```
+$ ionstop
+```
+
