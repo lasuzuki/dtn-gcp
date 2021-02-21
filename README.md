@@ -151,21 +151,3 @@ Assuming no errors occur with the configuration files above, we are now ready to
 1. Testing your connection
 2. Stopping the Daemon
 3. Creating a single configuration file
-
-## ION File for two nodes using LTP
-Assuming no errors occur with the configuration files above, we are now ready to test a two nodes communications, and also learn how to properly stop ION nodes. The single rc file for `host 1` can be found [here](/rcfiles/host1.rc) and for `host 2` [here](/rcfiles/host1.rc).
-
-The execution of the two hosts should be performed using the command
-
-````
-$ ionstart -I <hostname>.rc
-````
-
-The image below illustrates the communication between the two hosts using `bpsink` and `bpsource`.
-
-<img src="https://github.com/lasuzuki/dtn-gcp/blob/main/blob/img6.png" width=600 align=center>
-
-To stop ION in both VM instances, use the command 
-```
-$ ionstop
-```
