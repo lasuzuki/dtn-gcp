@@ -12,7 +12,8 @@ This project has been developed by Dr Lara Suzuki :woman_technologist: [![Twitte
 
 ## Introduction
 
-In this project we demonstrate how to run DTN on Google Cloud using NASA's implementation of the bundle protocol - ION.
+In this project we demonstrate how to run DTN on Google Cloud using NASA's implementation of the bundle protocol - ION. DTN stands for delay-tolerant and disruption-tolerant networks. 
+> *"It is an evolution of the architecture originally designed for the Interplanetary Internet, a communication system envisioned to provide Internet-like services across interplanetary distances in support of deep space exploration"* [Cerf et al, 2007](https://tools.ietf.org/html/rfc4838). 
 
 The ION (interplanetary overlay network) software is a suite of communication protocol implementations designed to support mission operation communications across an end-to-end interplanetary network, which might include on-board (flight) subnets, in-situ planetary or lunar networks, proximity links, deep space links, and terrestrial internets.
 

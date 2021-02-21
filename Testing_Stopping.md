@@ -55,10 +55,6 @@ The commands part of the `ionstop` script is shown below.
 ````
 # shell script to stop node
 #!/bin/bash
-tccadmin 203    .
-sleep 1
-tcaadmin 203    .
-sleep 1
 bpadmin         .
 sleep 1
 ltpadmin        .
